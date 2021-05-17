@@ -1,0 +1,11 @@
+services:
+  daipedemo.lib.lineage.ArgumentMapping:
+    tags:
+      - 'lineage.decorator.function.argument_mapping'
+
+  daipedemo.lib.lineage.keboola_writer_parser:
+    class: daipecore.lineage.GenericOutputDecoratorParser
+    arguments:
+      - 'keboola_writer'
+    tags:
+      - 'lineage.decorator.parser'

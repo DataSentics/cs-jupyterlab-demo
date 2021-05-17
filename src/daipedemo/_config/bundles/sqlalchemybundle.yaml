@@ -1,0 +1,10 @@
+parameters:
+  sqlalchemybundle:
+    connections:
+      default:
+        engine: mssql
+        server: 'adpicker-sql-db.database.windows.net'
+        database: 'daipe'
+        username: '%env(MSSQL_USER)%'
+        password: '%env(MSSQL_PASS)%'
+        driver: '{ODBC Driver 17 for SQL Server}'
