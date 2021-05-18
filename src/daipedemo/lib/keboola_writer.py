@@ -12,7 +12,3 @@ class keboola_writer(OutputDecorator):  # noqa: N801
 
     def process_result(self, result: pd.DataFrame, container: ContainerInterface):
         result.to_csv(self.__path, **self.__kwargs)
-
-    @property
-    def identifier(self):
-        return self.__path
